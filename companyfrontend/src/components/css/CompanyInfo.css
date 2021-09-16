@@ -1,0 +1,15 @@
+header {
+  background-color: #2ec4b6;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  align-items: center;
+  color: white;
+}
+.contactInfo {
+  display: flex;
+}
+.btn {
+  margin-left: 0.5rem !important;
+  background-color: #4f518c !important;
+}

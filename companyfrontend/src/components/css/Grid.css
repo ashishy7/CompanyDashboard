@@ -1,0 +1,20 @@
+.Mui-odd {
+  background-color: lightgray;
+}
+
+.MuiDataGrid-columnsContainer {
+  background-color: black;
+  color: white;
+}
+.MuiDataGrid-sortIcon {
+  color: white !important;
+}
+
+.grid {
+  position: relative;
+}
+.grid .del_btn {
+  position: absolute;
+  right: 10rem;
+  top: -3rem;
+}

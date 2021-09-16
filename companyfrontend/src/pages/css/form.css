@@ -1,0 +1,91 @@
+/*form */
+.form {
+  min-width: clamp(300px, 40vw, 400px);
+  min-height: 400px;
+  background-color: white;
+  padding: 0.5rem;
+}
+.form__top {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  text-align: center;
+}
+.form__top i {
+  cursor: pointer;
+}
+.form__top h2 {
+  font-weight: 500;
+  flex: 1;
+  font-size: clamp(1.5rem, 5vw, 2rem);
+  color: #000a42;
+}
+.form__top div {
+  flex: 0.04;
+  display: flex;
+  justify-content: flex-end;
+}
+.form__bottom {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+.form__bottom form {
+  display: flex;
+  margin-top: 2rem;
+  flex-direction: column;
+}
+.form__bottom form input {
+  min-width: clamp(200px, 40vw, 400px);
+  padding: 0.5rem 0.2rem;
+  outline-style: none;
+  border: none;
+  border-bottom: 1px solid;
+}
+.form__bottom form div {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form__bottom .inp_error {
+  color: red;
+}
+.form__bottom .generr {
+  text-align: center;
+}
+.form__bottom form div {
+  margin-bottom: 0.5rem;
+}
+.form__bottom form div div::after {
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--colorform);
+  content: "";
+  transition: all 400ms ease-in-out;
+}
+.form__bottom form div div:focus-within:after {
+  width: 100%;
+}
+.form__bottom button {
+  padding: 0.5rem 0;
+  outline: none;
+  margin-top: 2rem;
+  border: none;
+  font-weight: 500;
+  background-color: #eee5e9;
+}
+.form__bottom button:enabled:hover {
+  background-color: var(--colorform);
+  color: white;
+}
+.form__bottom p {
+  margin-top: 0.5rem;
+}
+.spanlink {
+  color: var(--colorform);
+  font-weight: 600;
+  cursor: pointer;
+}

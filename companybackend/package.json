@@ -1,0 +1,22 @@
+{
+  "name": "companybackend",
+  "version": "1.0.0",
+  "description": "Backend service for company management ",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r esm ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Rohit Yadav",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.10.16",
+    "uuid": "^8.3.1"
+  }
+}
