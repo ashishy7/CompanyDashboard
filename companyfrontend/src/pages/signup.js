@@ -20,10 +20,10 @@ const style = (theme) => ({
 const { SIGNUPFIELDSTOVALIDATE, INTERNAL_SERVER_ERROR_MSG } = CONSTANTS;
 const Signup = ({ classes: { logingrid, textField, button, loading } }) => {
   const initialState = {
-    email: "rohity@gmail.com",
-    password: "12345",
-    name: "Rohit",
-    phoneNo: "9892794230",
+    email: "",
+    password: "",
+    name: "",
+    phoneNo: "",
   };
   const [state, setState] = useState(initialState);
   const [error, setError] = useState(undefined);

@@ -2,7 +2,7 @@ export default {
   COMPANY_DATA_KEYS: ["email", "name", "phoneNo", "createdAt", "_id"],
   COMPANY_ALREADY_EXIST_MSG: "Company already exist, please sign In",
   EMPLOYEE_ALREADY_EXIST_MSG: "Employee already exist !",
-  COMPANY_NOT_FOUND_MSG: "Company not found, please try again",
+  COMPANY_NOT_FOUND_MSG: "Company not found,",
   PASS_INCORRECT: "Password did not matched",
   INTERNAL_SERVER_ERROR_MSG:
     "There is some internal server error, please try again later",

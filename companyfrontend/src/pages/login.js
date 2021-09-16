@@ -13,6 +13,7 @@ import theme from "../util/theme";
 import auth from "../util/AuthHandler";
 import { useHistory } from "react-router-dom";
 import company from "../util/Company";
+import { Link } from "react-router-dom";
 const style = (theme) => ({
   ...theme,
 });
@@ -20,8 +21,8 @@ const style = (theme) => ({
 const { SIGNINFIELDSTOVALIDATE, INTERNAL_SERVER_ERROR_MSG } = CONSTANTS;
 const SignIn = ({ classes: { logingrid, textField, button, loading } }) => {
   const initialState = {
-    email: "rohity@gmail.com",
-    password: "12345",
+    email: "",
+    password: "",
   };
   const [state, setState] = useState(initialState);
   const [error, setError] = useState(undefined);
@@ -98,7 +99,15 @@ const SignIn = ({ classes: { logingrid, textField, button, loading } }) => {
           />{" "}
           {!!(error && error["general"]) && (
             <Typography variant="body2" color="secondary">
-              {error && error["general"]}
+              {(error && error["general"]) ===
+                "Company not found," ? (
+                  <>
+             { error["general"]}
+                <Link to="./signup"> Please Signup </Link>
+                </>
+              ) : (
+                error["general"]
+              )}
             </Typography>
           )}
           <Button
@@ -117,6 +126,9 @@ const SignIn = ({ classes: { logingrid, textField, button, loading } }) => {
             )}
             Login
           </Button>
+          {/* <Button className="signupButton">
+            <Link to="./signup">SignUp</Link>
+          </Button> */}
         </form>
       </Grid>
     </Grid>
